@@ -18,10 +18,7 @@ const drawGame = () => {
 };
 
 const decideFinalWinner = (userScore, compScore) => {
-    if (userScore === compScore) {
-        msg.innerText = "GAME DRAW! PLAY AGAIN!";
-        msg.style.backgroundColor = "#081b31";
-    } else if (userScore > compScore) {
+    if (userScore > compScore) {
         msg.innerText = "YOU BEAT COMPUTER! PLAY AGAIN!";
         msg.style.backgroundColor = "green";
     } else {
